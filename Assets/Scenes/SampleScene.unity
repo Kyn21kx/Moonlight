@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 223712203}
   - component: {fileID: 223712206}
   - component: {fileID: 223712207}
+  - component: {fileID: 223712208}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -258,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11e9143d9d19c24c854ff5a22024f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 25
+  movementSpeed: 5
 --- !u!212 &223712204
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -300,12 +301,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 917472188bb6d9348a2a4472d4955d26, type: 3}
+  m_Sprite: {fileID: -1197602914, guid: c008766534d82364e9517ddb0a1da1b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.46, y: 5.2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -368,6 +369,27 @@ MonoBehaviour:
   heartImgParent: {fileID: 1422121698}
   fullHeartSprite: {fileID: -2081570986, guid: d7d5bed64deaa3849a0e46f54de2050d, type: 3}
   brokenHeartSprite: {fileID: -122279577, guid: d7d5bed64deaa3849a0e46f54de2050d, type: 3}
+--- !u!95 &223712208
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223712202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 826dc3e7f777e784e8929124d7f62f79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -28.3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -592,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284905961063411581, guid: d3b35af7bb3bb90439771af7d9124916, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 5284905961063411581, guid: d3b35af7bb3bb90439771af7d9124916, type: 3}
       propertyPath: m_LocalRotation.w
@@ -616,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284905961063411581, guid: d3b35af7bb3bb90439771af7d9124916, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -57.544678
+      value: -83
       objectReference: {fileID: 0}
     - target: {fileID: 5284905961063411581, guid: d3b35af7bb3bb90439771af7d9124916, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

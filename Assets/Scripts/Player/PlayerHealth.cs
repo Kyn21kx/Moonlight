@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Auxiliars;
 using System.Linq;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -19,6 +20,8 @@ public class PlayerHealth : MonoBehaviour {
 	private Sprite fullHeartSprite;
 	[SerializeField]
 	private Sprite brokenHeartSprite;
+	[SerializeField]
+	private TextMeshProUGUI armorText;
 	private Image[] hearts = new Image[MAX_HEALTH / 2];
 	#endregion
 
@@ -46,6 +49,8 @@ public class PlayerHealth : MonoBehaviour {
 
 	public bool Damage() {
 		//Handle parry or any other damage avoiding methods here
+		//Check the armor here
+
 		//This is if we do take damage:
 		//If the health has been damaged before, take it out
 		if (this.hearts[this.CurrHeartIndex].sprite == this.brokenHeartSprite) {
